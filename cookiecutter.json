@@ -1,0 +1,12 @@
+{
+  "author_name": "Thanate boat Dhirasakdanon",
+  "author_email": "dthanate@gmail.com",
+  "project_name": "a-python-project",
+  "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
+  "package_name": "{{ cookiecutter.repo_name|replace('-', '_') }}",
+  "project_desc": "A Python project about something",
+  "python_version": ">=3.11.4,<3.12",
+  "env_file": ".env",
+  "envrc_file": ".envrc",
+  "version": "0.1.0"
+}

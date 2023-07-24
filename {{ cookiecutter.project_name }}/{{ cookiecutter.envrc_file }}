@@ -1,0 +1,11 @@
+dotenv_if_exists
+PATH_add bin
+path_add PYTHONPATH {{ cookiecutter.package_name }}
+export POETRY_VIRTUALENVS_IN_PROJECT=1
+export JUPYTER_PATH=""
+path_add JUPYTER_CONFIG_DIR .jupyter
+path_add JUPYTER_CONFIG_PATH .jupyter
+path_add JUPYTER_DATA_DIR .jupyter
+source_env_if_exists .venv/bin/activate
+[ -n $VIRTUAL_ENV ] && echo `expand_path .` > $VIRTUAL_ENV/.project
+[ -n $VIRTUAL_ENV ] || echo "Please run poetry install --sync --compile"

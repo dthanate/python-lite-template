@@ -1,0 +1,44 @@
+{
+    "json.schemaDownload.enable": true,
+    "python.linting.mypyEnabled": true,
+    "python.linting.banditEnabled": true,
+    "python.linting.flake8Path": "flake8helled",
+    "python.linting.flake8Enabled": true,
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": false,
+            "source.organizeImports.reorder-python-imports": true
+        }
+    },
+    "python.formatting.provider": "none",
+    "editor.formatOnSave": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "python.analysis.diagnosticMode": "workspace",
+    "python.analysis.typeCheckingMode": "strict",
+    "notebook.compactView": true,
+    "notebook.dragAndDropEnabled": false,
+    "envSelector.enabled": true,
+    "envSelector.regex": ".env*",
+    "flake8.path": [
+        "${workspaceFolder}/.venv/bin/flake8helled"
+    ],
+    "black-formatter.path": [
+        "${workspaceFolder}/.venv/bin/black"
+    ],
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--show-column-numbers",
+        "--no-pretty"
+    ],
+    "mypy.runUsingActiveInterpreter": true,
+    "files.associations": {
+        "*.dvc": "yaml",
+        "dvc.lock": "yaml",
+        "poetry.lock": "toml"
+    }
+}

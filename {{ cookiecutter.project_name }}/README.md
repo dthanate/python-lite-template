@@ -1,0 +1,3 @@
+- make sure you have working [poetry](https://python-poetry.org/) with version at least 1.5.1
+- maks sure your system has working installation of [direnv](https://direnv.net/)
+- also make sure [vscode direnv extension](https://github.com/rubymaniac/vscode-direnv) is installed
