@@ -21,6 +21,7 @@ pipdeptree = ">=2.10.2"
 
 [tool.poetry.group.notebook.dependencies]
 jupyterlab = ">=4.0.1"
+jupyterlab-vim = ">=0.16.0"
 jupyterlab-git = ">=0.41.0"
 matplotlib = ">=3.7.1"
 plotly = ">=5.14.1"
