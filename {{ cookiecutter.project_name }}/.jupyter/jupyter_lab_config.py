@@ -846,7 +846,7 @@ c.ServerApp.disable_check_xsrf = True
 
 ## The IP address the Jupyter server will listen on.
 #  Default: 'localhost'
-c.ServerApp.ip = '0.0.0.0'
+c.ServerApp.ip = "0.0.0.0"
 
 ## Supply extra arguments that will be passed to Jinja environment.
 #  Default: {}
@@ -954,11 +954,11 @@ c.ServerApp.open_browser = False
 
 ## DEPRECATED in 2.0. Use PasswordIdentityProvider.hashed_password
 #  Default: ''
-# c.ServerApp.password = ''
+c.ServerApp.password = ""
 
 ## DEPRECATED in 2.0. Use PasswordIdentityProvider.password_required
 #  Default: False
-# c.ServerApp.password_required = False
+c.ServerApp.password_required = False
 
 ## The port the server will listen on (env: JUPYTER_PORT).
 #  Default: 0
@@ -1050,7 +1050,7 @@ c.ServerApp.open_browser = False
 
 ## DEPRECATED. Use IdentityProvider.token
 #  Default: '<DEPRECATED>'
-# c.ServerApp.token = '<DEPRECATED>'
+c.ServerApp.token = ""
 
 ## Supply overrides for the tornado.web.Application that the Jupyter server uses.
 #  Default: {}

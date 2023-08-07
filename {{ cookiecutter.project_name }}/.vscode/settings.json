@@ -22,8 +22,6 @@
     "python.analysis.typeCheckingMode": "strict",
     "notebook.compactView": true,
     "notebook.dragAndDropEnabled": false,
-    "envSelector.enabled": true,
-    "envSelector.regex": ".env*",
     "flake8.path": [
         "${workspaceFolder}/.venv/bin/flake8helled"
     ],
@@ -40,5 +38,7 @@
         "*.dvc": "yaml",
         "dvc.lock": "yaml",
         "poetry.lock": "toml"
-    }
+    },
+    "envSelector.enabled": true,
+    "envSelector.regex": ".env*"
 }
