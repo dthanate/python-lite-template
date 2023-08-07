@@ -36,7 +36,7 @@ pytest-xdist = ">=3.3.1"
 hypothesis = ">=6.78.3"
 pytest-asyncio = ">=0.21.0"
 
-[tool.poetry.group.types.dependencies]
+[tool.poetry.group.type.dependencies]
 
 [[tool.poetry.source]]
 name = "PyPI"
