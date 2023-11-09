@@ -149,3 +149,5 @@ catboost_info
 *.cbm
 *.pkl
 *.csv
+
+.lvimrc
