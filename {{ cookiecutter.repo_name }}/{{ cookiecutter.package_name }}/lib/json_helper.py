@@ -42,7 +42,7 @@ def json_load(
     return cast(JSONType, ujson.load(flike))
 
 
-def json_dump(  # pylint: disable=too-many-arguments
+def json_dump(
     obj: JSONType,
     flike: str | Path | PathLike[str] | TextIO | OpenFile,
     *,

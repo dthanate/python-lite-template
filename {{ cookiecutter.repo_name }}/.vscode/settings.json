@@ -1,78 +1,78 @@
 {
-    "json.schemaDownload.enable": true,
-    "python.languageServer": "Pylance",
-    "python.envFile": "${workspaceFolder}/.env",
-    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
-    "python.analysis.ignore": [
-        "**/*.ipynb*",
-        ".jupyter",
-        ".venv"
-    ],
-    "python.analysis.exclude": [
-        "**/*.ipynb*",
-        ".jupyter",
-        ".venv"
-    ],
-    "python.analysis.autoSearchPaths": false,
-    "python.analysis.include": [
-        "{{ cookiecutter.package_name }}"
-    ],
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": false,
-            "source.organizeImports.reorder-python-imports": true
-        }
-    },
-    "editor.formatOnSave": true,
-    "editor.autoIndent": "advanced",
-    "editor.codeLens": true,
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
-    "python.analysis.diagnosticMode": "workspace",
-    "python.analysis.typeCheckingMode": "strict",
-    "notebook.compactView": true,
-    "notebook.dragAndDropEnabled": false,
-    "notebook.formatOnCellExecution": false,
-    "notebook.formatOnSave.enabled": true,
-    "flake8.interpreter": [
-        "${workspaceFolder}/.venv/bin/python3"
-    ],
-    "flake8.path": [
-        "${workspaceFolder}/.venv/bin/flake8helled"
-    ],
-    "black-formatter.interpreter": [
-        "${workspaceFolder}/.venv/bin/python3"
-    ],
-    "black-formatter.path": [
-        "${workspaceFolder}/.venv/bin/black"
-    ],
-    "black-formatter.args": [
-        "-l",
-        "140"
-    ],
-    "mypy-type-checker.interpreter": [
-        "${workspaceFolder}/.venv/bin/python3"
-    ],
-    "mypy-type-checker.path": [
-        "${workspaceFolder}/.venv/bin/mypy"
-    ],
-    "files.associations": {
-        "*.dvc": "yaml",
-        "dvc.lock": "yaml",
-        "poetry.lock": "toml"
-    },
-    "pylint.interpreter": [
-        "${workspaceFolder}/.venv/bin/python3"
-    ],
-    "pylint.args": [
-        "--max-line-length",
-        "140"
-    ],
-    "jupyter.interactiveWindow.codeLens.enable": true,
-    "jupyter.interactiveWindow.codeLens.enableGotoCell": true,
-    "vscode-neovim.neovimClean": true,
-    "vscode-pylens.enableCodeLens": true,
-    "python.analysis.autoImportCompletions": true
+  "json.schemaDownload.enable": true,
+  "python.languageServer": "Pylance",
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python3",
+  "python.analysis.ignore": [
+    "**/*.ipynb*",
+    ".jupyter",
+    ".venv"
+  ],
+  "python.analysis.exclude": [
+    "**/*.ipynb*",
+    ".jupyter",
+    ".venv"
+  ],
+  "python.analysis.autoSearchPaths": false,
+  "python.analysis.include": [
+    "abc_def"
+  ],
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false,
+      "source.organizeImports.reorder-python-imports": true
+    }
+  },
+  "editor.formatOnSave": true,
+  "editor.autoIndent": "advanced",
+  "editor.codeLens": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.typeCheckingMode": "strict",
+  "notebook.compactView": true,
+  "notebook.dragAndDropEnabled": false,
+  "notebook.formatOnCellExecution": false,
+  "notebook.formatOnSave.enabled": true,
+  "flake8.interpreter": [
+    "${workspaceFolder}/.venv/bin/python3"
+  ],
+  "flake8.path": [
+    "${workspaceFolder}/.venv/bin/flake8helled"
+  ],
+  "black-formatter.interpreter": [
+    "${workspaceFolder}/.venv/bin/python3"
+  ],
+  "black-formatter.path": [
+    "${workspaceFolder}/.venv/bin/black"
+  ],
+  "black-formatter.args": [
+    "-l",
+    "140"
+  ],
+  "mypy-type-checker.interpreter": [
+    "${workspaceFolder}/.venv/bin/python3"
+  ],
+  "mypy-type-checker.path": [
+    "${workspaceFolder}/.venv/bin/mypy"
+  ],
+  "files.associations": {
+    "*.dvc": "yaml",
+    "dvc.lock": "yaml",
+    "poetry.lock": "toml"
+  },
+  "pylint.interpreter": [
+    "${workspaceFolder}/.venv/bin/python3"
+  ],
+  "pylint.args": [
+    "--max-line-length",
+    "140"
+  ],
+  "jupyter.interactiveWindow.codeLens.enable": true,
+  "jupyter.interactiveWindow.codeLens.enableGotoCell": true,
+  "vscode-neovim.neovimClean": true,
+  "vscode-pylens.enableCodeLens": true,
+  "python.analysis.autoImportCompletions": true
 }

@@ -83,7 +83,7 @@ def pickle_load(
     return load(flike)
 
 
-def pickle_dump(  # pylint: disable=too-many-arguments
+def pickle_dump(
     obj: object,
     flike: str | bytes | PathLike[str] | BinaryIO | OpenFile | Path,
     *,
