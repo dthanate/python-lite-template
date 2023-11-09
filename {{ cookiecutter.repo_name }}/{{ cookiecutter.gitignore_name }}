@@ -151,3 +151,5 @@ catboost_info
 *.csv
 
 .lvimrc
+/.jupyter
+/.vscode
