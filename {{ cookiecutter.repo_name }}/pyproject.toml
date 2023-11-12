@@ -38,7 +38,13 @@ types-all = ">=1.0.0"
 [tool.poetry_bumpversion.file."{{ cookiecutter.package_name }}/__init__.py"]
 
 [tool.pylint]
+jobs = 0
+extension-pkg-allow-list = ["ujson", "pydantic"]
+
+[tool.pylint.FORMAT]
 max-line-length = 140
+
+[tool.pylint."MESSAGE CONTROL"]
 disable = [
   "missing-function-docstring",
   "missing-module-docstring",
@@ -55,7 +61,7 @@ target-version = ["py311"]
 
 [tool.mypy]
 python_version = "3.11"
-plugins = ["numpy.typing.mypy_plugin"]
+plugins = ["numpy.typing.mypy_plugin", "pydantic.mypy"]
 
 follow_imports = "normal"
 ignore_missing_imports = true
@@ -67,6 +73,11 @@ disallow_any_generics = true
 check_untyped_defs = true
 no_implicit_reexport = true
 disallow_untyped_defs = false # for strict mypy: (this is the tricky one :-))
+
+[tool.pydantic-mypy]
+init_forbid_extra = true
+init_typed = true
+warn_required_dynamic_aliases = true
 
 [tool.pyright]
 typeCheckingMode = "strict"
