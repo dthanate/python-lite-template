@@ -12,6 +12,7 @@ ujson = ">=5.8.0"
 dill = ">=0.3.7"
 numpy = ">=1.26.1"
 more-itertools = ">=10.1.0"
+fsspec = ">=2024.2.0"
 
 [tool.poetry.group.dev.dependencies]
 mypy = ">=1.6.1"

@@ -1,4 +1,3 @@
-# pylint: disable=c-extension-no-member
 from os import PathLike
 from pathlib import Path
 from typing import cast
