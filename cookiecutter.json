@@ -5,6 +5,5 @@
   "repo_name": "{{ cookiecutter.project_name|lower|replace(' ', '-') }}",
   "package_name": "{{ cookiecutter.repo_name|replace('-', '_') }}",
   "project_desc": "A Python project about something",
-  "gitignore_name": ".gitignore",
   "version": "0.1.0"
 }
